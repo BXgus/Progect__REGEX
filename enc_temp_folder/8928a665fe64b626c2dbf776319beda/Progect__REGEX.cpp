@@ -47,11 +47,14 @@ int main()
         std::regex_constants::match_default;
 
     cout << "search(f, f+6, \"abc\") == " << std::boolalpha
-        << regex_search(first_, first_+6, rx__1, FLAG) << std::endl; // search(f, f+5, "abc") == false
+        << regex_search(first_, first_+6, rx__1, FLAG) << std::endl; // выведется search(f, f+5, "abc") == false
     cout << "search(f, f+7, \"abc\") == " << std::boolalpha
-       << regex_search(first_, first_+7, rx__1, FLAG) << std::endl; // search(f, f+7, "abc") == true
+        << regex_search(first_, first_+7, rx__1, FLAG) << std::endl;
         cout << "search(\"1234abc890\", \"abc\") == " << std::boolalpha
           << regex_search("1234abc890", rx__1) << std::endl; // search("1234abc890", "abc") == true
+
+    // ---------------------------------------------------------
+
     // ---------------------------------------------------------
     string lines[] = { "Roses are #ff0000",
                            "violets are #0000ff",
