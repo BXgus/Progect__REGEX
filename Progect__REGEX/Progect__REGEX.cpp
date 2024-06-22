@@ -37,7 +37,7 @@ int main()
     * ( std::regex_replace(&buf[0], first, last, rx_2, fmt_2) ) = '\0';
     cout << "replacement == " << &buf[0] << endl; // выведется replacement == AxAyAz
     // ---------------------------------------------------------
-    * ( std::regex_replace(&buf[0], first, last, rx_2, fmt_2, FONLY) ) = '\0';
+    * ( std::regex_replace(&buf[0], first, last, rx_2, fmt_2, FONLY) ) = '\0'; 
     cout << "replacement == " << &buf[0] << endl; // выведется replacement == Axayazё
     // ---------------------------------------------------------
     // ---------------------------------------------------------
